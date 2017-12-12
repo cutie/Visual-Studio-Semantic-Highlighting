@@ -164,7 +164,7 @@ namespace SemanticCodeHighlighting.Colorization {
 			if(huePercentage > 100) huePercentage = 100;
 			huePercentage /= 100.0;
 
-			return new ColorHCL(hueLimit[0] + huePercentage * (hueLimit[1] - hueLimit[0]), chroma, luminance);
+			return new ColorHCL(hueLimit[0] + huePercentage * (hueLimit[1] - hueLimit[0]), chroma * 3.0f, luminance);
 		}
 
 		[DebuggerStepThrough]
